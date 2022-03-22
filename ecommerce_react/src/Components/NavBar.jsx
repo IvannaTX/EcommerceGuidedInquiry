@@ -1,4 +1,5 @@
 import React,{ Component } from "react";
+import Products from "./Products";
 
 class NavBar extends Component{
     render(){
@@ -16,12 +17,16 @@ class NavBar extends Component{
                                 <a className="nav-link" aria-current="page" href="#">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                <a className="nav-link" href="/#">Link</a>
+                                <a className="nav-link" href="/#">Products</a>
+                                </li>
+                                <li className="nav-item">
+                                <a className="nav-link" href="/#">Contact</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
+                <Products/>
             </React.Fragment>
         )
     }
