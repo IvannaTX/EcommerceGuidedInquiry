@@ -1,7 +1,16 @@
 import React, { Component } from "react";
 
 export default class Products extends Component{
-    state = { pageTitle:"Products", productsCount: 12 };
+    state = { 
+        pageTitle:"Products", 
+        productsCount: 12,
+        products:[
+            {title:1,price:"$4.00", description:"Mat"},
+            {title:2,price:"$4.00", description:"Mat"},
+            {title:3,price:"$4.00", description:"Mat"},
+            {title:4,price:"$4.00", description:"Mat"},
+        ]
+    };
 
     render(){
         return <div>
@@ -11,6 +20,26 @@ export default class Products extends Component{
                 {this.state.productsCount}</span>
                 <button className="btn btn-info" onClick={this.onRefreshClick}>Refresh</button>
             </h4>
+            <table className="table">
+                <thead>
+                    <tr>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {this.state.products.map((prod)=>{
+                        return(
+                            <tr>
+                                <td>{prod.title}</td>
+                                <td>{prod.price}</td>
+                                <td>{prod.description}</td>
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
         </div>
     }
 
