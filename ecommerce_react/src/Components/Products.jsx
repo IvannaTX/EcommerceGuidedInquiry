@@ -3,7 +3,6 @@ import React, { Component } from "react";
 export default class Products extends Component{
     state = { 
         pageTitle:"Products", 
-        productsCount: 12,
         products:[
             {title:1,price:"$4.00", description:"Mat"},
             {title:2,price:"$4.00", description:"Mat"},
@@ -16,11 +15,17 @@ export default class Products extends Component{
         return <div>
             <h4 className="border-bottom m-1 p-1">
                 {this.state.pageTitle}
-                <span className="badge badge-secondary m-2">
-                {this.state.productsCount}</span>
-                <button className="btn btn-info" onClick={this.onRefreshClick}>Refresh</button>
             </h4>
-            <table className="table">
+                {/* <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title"><title></title></h5>
+                        <p class="card-text">description</p>
+                        <p class="card-text">price</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div> */}
+            {/* <table className="table">
                 <thead>
                     <tr>
                         <th>title</th>
@@ -31,7 +36,7 @@ export default class Products extends Component{
                 <tbody>
                     {this.state.products.map((prod)=>{
                         return(
-                            <tr>
+                            <tr key={prod.title}>
                                 <td>{prod.title}</td>
                                 <td>{prod.price}</td>
                                 <td>{prod.description}</td>
@@ -39,7 +44,7 @@ export default class Products extends Component{
                         );
                     })}
                 </tbody>
-            </table>
+            </table> */}
         </div>
     }
 
