@@ -1,5 +1,4 @@
-import React,{ Component } from "react";
-import Products from "./Products";
+import React from "react";
 
 class NavBar extends Component{
     render(){
@@ -26,7 +25,6 @@ class NavBar extends Component{
                         </div>
                     </div>
                 </nav>
-                <Products/>
             </React.Fragment>
         )
     }

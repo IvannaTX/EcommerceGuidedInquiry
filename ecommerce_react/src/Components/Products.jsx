@@ -25,7 +25,7 @@ export default class Products extends Component{
                         <a href="#" class="btn btn-primary">Order Now</a>
                     </div>
                 </div> */}
-            {/* <table className="table">
+            <table className="table">
                 <thead>
                     <tr>
                         <th>title</th>
@@ -44,7 +44,7 @@ export default class Products extends Component{
                         );
                     })}
                 </tbody>
-            </table> */}
+            </table>
         </div>
     }
 

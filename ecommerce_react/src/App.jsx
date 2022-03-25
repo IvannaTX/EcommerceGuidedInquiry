@@ -1,13 +1,19 @@
-import React,{ Component } from "react";
-import NavBar from "./Components/NavBar";
-import Products from "./Components/Products";
-export default class App extends 
-Component{
-    render(){
-        return 
-        <React.Fragment>
-            <NavBar/>
-            <Products/>
-        </React.Fragment>
-    }
+import Navbar from './Components/Navbar';
+// import Products from './Components/Products';
+
+  
+import {
+  BrowserRouter as Router, Routes, Route,
+} from "react-router-dom";
+
+function App() {
+  
+  return (
+      
+     <Navbar/>
+    
+
+  );
 }
+
+export default App;
